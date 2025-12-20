@@ -1,0 +1,61 @@
+.chapterContainer {
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  padding: 2rem var(--ifm-spacing-horizontal);
+}
+
+.chapterHeader {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chapterTitle {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.chapterDescription {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0;
+}
+
+.learningObjectives {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 1.5rem;
+  border-radius: var(--ifm-global-radius);
+  margin: 2rem 0;
+}
+
+.learningObjectives h2 {
+  margin-top: 0;
+  color: var(--ifm-color-primary);
+}
+
+.learningObjectives ul {
+  margin-bottom: 0;
+}
+
+.chapterContent {
+  margin: 2rem 0;
+}
+
+.chapterFooter {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding-top: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.chapterInfo {
+  margin: 0;
+}
+
+@media (min-width: 997px) {
+  .chapterContainer {
+    padding: 2rem 3rem;
+  }
+}

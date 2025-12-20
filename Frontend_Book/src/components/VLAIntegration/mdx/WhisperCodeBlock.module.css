@@ -1,0 +1,82 @@
+.whisperCodeBlock {
+  margin: 1.5rem 0;
+  border-radius: var(--ifm-global-radius);
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.header {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.typeLabel {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+}
+
+.speechRecognition .typeLabel {
+  background-color: #3498DB; /* Blue for speech recognition */
+}
+
+.audioProcessing .typeLabel {
+  background-color: #9B59B6; /* Purple for audio processing */
+}
+
+.transcription .typeLabel {
+  background-color: #1ABC9C; /* Teal for transcription */
+}
+
+.validation .typeLabel {
+  background-color: #F39C12; /* Orange for validation */
+}
+
+.general .typeLabel {
+  background-color: #2ECC71; /* Green for general */
+}
+
+.titleLabel {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-800);
+  font-weight: 500;
+}
+
+.description {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background-color: var(--ifm-color-emphasis-50);
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.codeContent {
+  padding: 0;
+}
+
+.speechRecognition {
+  border-left: 4px solid #3498DB;
+}
+
+.audioProcessing {
+  border-left: 4px solid #9B59B6;
+}
+
+.transcription {
+  border-left: 4px solid #1ABC9C;
+}
+
+.validation {
+  border-left: 4px solid #F39C12;
+}
+
+.general {
+  border-left: 4px solid #2ECC71;
+}

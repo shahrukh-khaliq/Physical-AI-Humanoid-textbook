@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir)",
+      "Bash(dir templates)",
+      "Bash(dir memory)",
+      "Bash(git fetch --all --prune)",
+      "Bash(powershell -Command \".specify/scripts/powershell/create-new-feature.ps1 -Json -Number 1 -ShortName ''ros2-humanoid-nervous-system'' -Description ''Project: Physical AI & Humanoid Robotics  Module: 1 – The Robotic Nervous System \\(ROS 2\\)  Purpose: Author Module 1 as a Docusaurus section introducing ROS 2 as the middleware enabling humanoid robot control.  Target audience: Software engineers and AI practitioners with Python knowledge.  Chapters:  1. ROS 2 Fundamentals  - ROS 2 as a robotic nervous system  - Nodes, topics, services, actions  - High-level ROS 2 architecture  Outcome: Reader understands ROS 2 communication model.  2. Python Agents with rclpy  - Connecting Python AI agents to ROS 2  - Publishers, subscribers, services via rclpy  - Agent-to-controller interaction  Outcome: Reader understands how AI logic interfaces with ROS 2.  3. Humanoid Description with URDF  - Purpose of URDF  - Links, joints, frames, kinematics  - Role of URDF in control and simulation  Outcome: Reader can interpret a humanoid URDF.  Standards: - Format: Docusaurus MDX - Style: Clear, technical, instructional  Constraints: - No hardware deployment''\")",
+      "Bash(powershell -Command \"./scripts/powershell/create-new-feature.ps1 -Json -Number 1 -ShortName ''ros2-humanoid-nervous-system'' -Description ''Project: Physical AI & Humanoid Robotics  Module: 1 – The Robotic Nervous System \\(ROS 2\\)  Purpose: Author Module 1 as a Docusaurus section introducing ROS 2 as the middleware enabling humanoid robot control.  Target audience: Software engineers and AI practitioners with Python knowledge.  Chapters:  1. ROS 2 Fundamentals  - ROS 2 as a robotic nervous system  - Nodes, topics, services, actions  - High-level ROS 2 architecture  Outcome: Reader understands ROS 2 communication model.  2. Python Agents with rclpy  - Connecting Python AI agents to ROS 2  - Publishers, subscribers, services via rclpy  - Agent-to-controller interaction  Outcome: Reader understands how AI logic interfaces with ROS 2.  3. Humanoid Description with URDF  - Purpose of URDF  - Links, joints, frames, kinematics  - Role of URDF in control and simulation  Outcome: Reader can interpret a humanoid URDF.  Standards: - Format: Docusaurus MDX - Style: Clear, technical, instructional  Constraints: - No hardware deployment''\")",
+      "Bash(mkdir -p specs/1-ros2-humanoid-nervous-system)",
+      "Bash(powershell -Command \".specify/scripts/powershell/setup-plan.ps1 -Json\")",
+      "Bash(powershell -Command:*)",
+      "Bash(git rev-parse --git-dir)",
+      "Bash(cat:*)"
+    ]
+  }
+}

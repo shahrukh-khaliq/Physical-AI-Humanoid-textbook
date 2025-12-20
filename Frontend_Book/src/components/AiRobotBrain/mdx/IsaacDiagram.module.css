@@ -1,0 +1,50 @@
+.isaacDiagram {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.diagramContainer {
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-50);
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  display: inline-block;
+}
+
+.diagramImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: calc(var(--ifm-global-radius) - 2px);
+}
+
+.diagramInfo {
+  margin-top: 0.5rem;
+}
+
+.caption {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-800);
+  font-style: italic;
+  text-align: center;
+}
+
+.architecture .diagramContainer {
+  border-left: 4px solid #9B59B6; /* Purple for architecture */
+}
+
+.workflow .diagramContainer {
+  border-left: 4px solid #F39C12; /* Orange for workflow */
+}
+
+.simulation .diagramContainer {
+  border-left: 4px solid #1ABC9C; /* Teal for simulation */
+}
+
+.pipeline .diagramContainer {
+  border-left: 4px solid #3498DB; /* Blue for pipeline */
+}
+
+.general .diagramContainer {
+  border-left: 4px solid #2ECC71; /* Green for general */
+}
