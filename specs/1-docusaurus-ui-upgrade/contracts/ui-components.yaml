@@ -1,0 +1,93 @@
+# UI Component Contracts: Docusaurus UI Upgrade
+
+# This file defines the interface contracts for UI components
+# that will be created or modified during the UI upgrade process
+
+openapi: 3.0.0
+info:
+  title: Docusaurus UI Components API
+  version: 1.0.0
+  description: Interface definitions for custom UI components in the Docusaurus book frontend
+
+components:
+  schemas:
+    ThemeConfiguration:
+      type: object
+      properties:
+        primaryColor:
+          type: string
+          description: Primary brand color in hex format
+          example: "#25c2a0"
+        secondaryColor:
+          type: string
+          description: Secondary color in hex format
+          example: "#3578e5"
+        fontFamily:
+          type: string
+          description: Primary font family
+          example: "Inter, system-ui, sans-serif"
+        fontSize:
+          type: object
+          properties:
+            small:
+              type: string
+              description: Small text size
+              example: "0.875rem"
+            normal:
+              type: string
+              description: Normal text size
+              example: "1rem"
+            large:
+              type: string
+              description: Large text size
+              example: "1.25rem"
+        spacing:
+          type: object
+          properties:
+            unit:
+              type: number
+              description: Base spacing unit in pixels
+              example: 8
+
+    NavigationItem:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the navigation item
+        label:
+          type: string
+          description: Display text for the navigation item
+        href:
+          type: string
+          description: URL or path for the navigation item
+        children:
+          type: array
+          items:
+            $ref: '#/components/schemas/NavigationItem'
+          description: Sub-items for hierarchical navigation
+        isActive:
+          type: boolean
+          description: Whether this item is currently active
+
+    PageLayout:
+      type: object
+      properties:
+        sidebar:
+          type: boolean
+          description: Whether to show the sidebar
+        navbar:
+          type: boolean
+          description: Whether to show the navigation bar
+        toc:
+          type: boolean
+          description: Whether to show the table of contents
+        footer:
+          type: boolean
+          description: Whether to show the footer
+        maxWidth:
+          type: string
+          description: Maximum width of the content area
+          example: "1200px"
+
+paths: {}

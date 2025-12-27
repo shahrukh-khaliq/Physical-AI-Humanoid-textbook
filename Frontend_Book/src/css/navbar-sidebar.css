@@ -1,0 +1,210 @@
+/* Enhanced Navigation and Sidebar Styling */
+
+/* Sidebar container */
+.menu {
+  padding: var(--spacing-4);
+}
+
+/* Sidebar items */
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__list-item {
+  margin-bottom: var(--spacing-1);
+}
+
+.menu__list-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Sidebar links */
+.menu__link {
+  border-radius: var(--border-radius);
+  padding: var(--spacing-2) var(--spacing-3);
+  margin: var(--spacing-05) 0;
+  font-weight: var(--font-weight-normal);
+  transition: all 0.2s ease-in-out;
+}
+
+.menu__link:hover {
+  background-color: rgba(37, 194, 160, 0.1);
+  text-decoration: none;
+}
+
+.menu__link--active {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Nested sidebar items */
+.menu__list-item-collapsible {
+  border-radius: var(--border-radius);
+  margin: var(--spacing-05) 0;
+}
+
+.menu__list-item-collapsible:hover {
+  background-color: rgba(37, 194, 160, 0.05);
+}
+
+/* Sidebar category */
+.menu__category {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-color-light);
+  padding: var(--spacing-2) var(--spacing-3);
+  margin-top: var(--spacing-4);
+}
+
+.menu__category:first-child {
+  margin-top: 0;
+}
+
+/* Navbar styling */
+.navbar {
+  padding: 0 var(--spacing-4);
+  height: 4.5rem;
+  box-shadow: var(--shadow);
+}
+
+.navbar__inner {
+  max-width: 100%;
+}
+
+.navbar__brand {
+  margin-right: var(--spacing-6);
+}
+
+.navbar__logo {
+  height: 2rem;
+  width: auto;
+}
+
+.navbar__title {
+  font-weight: var(--font-weight-semibold);
+  margin-left: var(--spacing-2);
+}
+
+/* Navbar items */
+.navbar__items {
+  font-size: var(--font-size-base);
+}
+
+.navbar__item {
+  margin: 0 var(--spacing-2);
+}
+
+.navbar__link {
+  padding: var(--spacing-2) var(--spacing-3);
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar__link:hover {
+  background-color: rgba(37, 194, 160, 0.1);
+  text-decoration: none;
+}
+
+/* Navbar sidebar button */
+.navbar__toggle {
+  margin-right: var(--spacing-3);
+}
+
+/* Breadcrumb navigation */
+.breadcrumbs {
+  margin: var(--spacing-4) 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: ">";
+  margin: 0 var(--spacing-2);
+  opacity: 0.6;
+}
+
+.breadcrumbs__link {
+  color: var(--text-color-light);
+  text-decoration: none;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.breadcrumbs__link--active {
+  color: var(--text-color);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Table of contents */
+.table-of-contents {
+  padding: var(--spacing-3);
+  border-left: 3px solid var(--ifm-color-primary);
+  background-color: rgba(37, 194, 160, 0.03);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.table-of-contents li {
+  margin-bottom: var(--spacing-1);
+}
+
+.table-of-contents li:last-child {
+  margin-bottom: 0;
+}
+
+.table-of-contents__link {
+  color: var(--text-color-light);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  display: block;
+  padding: var(--spacing-1) 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.table-of-contents__link:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  padding-left: var(--spacing-2);
+}
+
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Mobile menu */
+.navbar-sidebar {
+  padding: var(--spacing-4);
+}
+
+.navbar-sidebar__brand {
+  margin-bottom: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Dark theme adjustments for navigation */
+[data-theme='dark'] .menu__link:hover {
+  background-color: rgba(37, 194, 160, 0.15);
+}
+
+[data-theme='dark'] .menu__list-item-collapsible:hover {
+  background-color: rgba(37, 194, 160, 0.1);
+}
+
+[data-theme='dark'] .table-of-contents {
+  background-color: rgba(37, 194, 160, 0.05);
+  border-left-color: var(--ifm-color-primary);
+}

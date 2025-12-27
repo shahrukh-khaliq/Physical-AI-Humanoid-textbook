@@ -28,7 +28,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Modules 1: ROS 2 for Humanoid Robotics',
+      label: 'ROS 2 for Humanoid Robotics',
       items: [
         'ros2-humanoid-nervous-system/chapter-1-ros2-fundamentals',
         'ros2-humanoid-nervous-system/chapter-2-python-agents-rclpy',
@@ -37,7 +37,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Modules 2: AI-Robot Brain (NVIDIA Isaac™)',
+      label: 'AI-Robot Brain (NVIDIA Isaac™)',
       items: [
         'ai-robot-brain-nvidia-isaac/chapter-1-isaac-sim',
         'ai-robot-brain-nvidia-isaac/chapter-2-isaac-ros',
@@ -46,7 +46,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Modules 3: Digital Twin (Gazebo & Unity)',
+      label: 'Digital Twin (Gazebo & Unity)',
       items: [
         'digital-twin-gazebo-unity/chapter-1-gazebo-physics-simulation',
         'digital-twin-gazebo-unity/chapter-2-unity-digital-twins',
@@ -55,7 +55,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Modules 4: Vision-Language-Action (VLA)',
+      label: 'Vision-Language-Action (VLA)',
       items: [
         'vla-integration/chapter-1-voice-to-action',
         'vla-integration/chapter-2-cognitive-planning',

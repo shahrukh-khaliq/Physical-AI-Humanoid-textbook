@@ -21,3 +21,31 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Custom button styling */
+.customButton {
+  background: linear-gradient(135deg, #40e6b4 0%, #646664 100%);
+  color: white !important;
+  border: none;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(61, 63, 66, 0.3);
+  margin: 10px;
+}
+
+.customButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(103, 194, 126, 0.4);
+  background: linear-gradient(135deg, #97b6a5 0%, #4e977b 100%);
+  text-decoration: none;
+  color: white !important;
+}
+
+.customButton:active {
+  transform: translateY(-1px);
+}

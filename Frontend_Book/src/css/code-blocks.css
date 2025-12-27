@@ -1,0 +1,75 @@
+/* Enhanced Code Block Styling */
+
+/* Code block container */
+div[class*='codeBlockContainer'] {
+  margin: var(--spacing-4) 0;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* Code block content */
+code {
+  font-family: var(--font-family-mono);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Inline code */
+code {
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-05) var(--spacing-1);
+  font-size: var(--font-size-sm);
+}
+
+/* Code block with syntax highlighting */
+pre code {
+  display: block;
+  overflow-x: auto;
+  padding: var(--spacing-4);
+  background-color: #f6f8fa;
+  color: #24292f;
+  line-height: var(--line-height-relaxed);
+  border-radius: var(--border-radius);
+}
+
+/* Dark theme code blocks */
+[data-theme='dark'] pre code {
+  background-color: #161b22;
+  color: #e6edf3;
+}
+
+/* Line highlighting in code blocks */
+.code-block-line-highlighted {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+/* Copy button styling */
+.theme-code-block-copy-button {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-1) var(--spacing-2);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+}
+
+/* Code block language tabs */
+.theme-code-block {
+  margin-bottom: var(--spacing-4);
+}
+
+/* Code block title */
+.code-block-title {
+  background-color: #f6f8fa;
+  padding: var(--spacing-2) var(--spacing-4);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme='dark'] .code-block-title {
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+}
