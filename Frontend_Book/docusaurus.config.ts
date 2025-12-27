@@ -75,7 +75,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'ROS 2 Nervous System',
+      title: 'Physical AI Book',
       logo: {
         alt: 'ROS 2 Humanoid Robotics Logo',
         src: 'img/logo.svg',

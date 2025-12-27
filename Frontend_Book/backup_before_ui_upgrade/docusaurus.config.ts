@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'ROS 2 for Humanoid Robotics',
+  title: 'Physical AI Book',
   tagline: 'A comprehensive guide to ROS 2 in humanoid robot development',
   favicon: 'img/favicon.ico',
 
